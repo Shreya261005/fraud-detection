@@ -1,9 +1,0 @@
-importances = clf.feature_importances_
-features = X.columns
-indices = np.argsort(importances)[-10:]
-
-plt.figure(figsize=(10, 6))
-sns.barplot(x=importances[indices], y=features[indices])
-plt.title("Top 10 Feature Importances")
-plt.tight_layout()
-plt.show()
